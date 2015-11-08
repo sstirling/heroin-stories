@@ -127,16 +127,22 @@ pre {
   background: #888;
   color: #262524;
   display:inline-block;
+  overflow: hidden;
+
 }
 
 .element-item-box {
   width: 100px;
   height: 110px;
+  overflow: hidden;
+
 }
 
 .element-item-quote {
   width: 330px;
-  height: 220px;
+  height: 230px;
+  overflow: hidden;
+
 }
 
 
@@ -193,7 +199,7 @@ pre {
   position: absolute;
   left: 10px;
   top: 76px;
-  font-size: 12px;
+  font-size: 13px;
   color: #ffffff;
 
 }
@@ -202,7 +208,7 @@ pre {
   position: absolute;
   left: 10px;
   top: 190px;
-  font-size: 12px;
+  font-size: 13px;
   color: #ffffff;
 
 }
@@ -213,6 +219,24 @@ pre {
   left: 10px;
   font-size: 16px;
   color: #ffffff;
+}
+
+.element-item-quote .text {
+  position: absolute;
+  left: 10px;
+  top: 230px;
+  font-size: 14px;
+  color: #ffffff;
+
+}
+
+.element-item-box .text {
+  position: absolute;
+  left: 10px;
+  top: 106px;
+  font-size: 14px;
+  color: #ffffff;
+
 }
 
 .element-item-box .expand {
@@ -244,15 +268,17 @@ pre {
 }
 
 .element-item-box.gigante {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 500px;
   background: #fff;
+  overflow:scroll;
 }
 
 .element-item-quote.gigante {
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 500px;
   background: #fff;
+  overflow:scroll;
 }
 
 
