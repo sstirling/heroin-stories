@@ -283,19 +283,19 @@ pre {
 
 
 
-.element-item-box.Recovery          { background: #1F8A70; background: #1F8A70; }
-.element-item-box.User  { background: #004358; background: #004358; }
-.element-item-box.Family      { background: #BEDB39; background:  #BEDB39; }
+.element-item-box.Recovery          { background: #29D9C2; background: #29D9C2; }
+.element-item-box.User  { background: #B9121B; background: #B9121B; }
+.element-item-box.Family      { background: #1F8A70; background:  #1F8A70; }
 .element-item-box.Significant_Other        { background: #FD7400; background: #FD7400; }
 .element-item-box.Friend      { background: #B266BF; background: #B266BF; }
-.element-item-box.Other { background: #29D9C2; background:#29D9C2; }
-.element-item-box.Parent       { background: #B9121B; background: #B9121B; }
-.element-item-quote.Recovery          { background: #1F8A70; background: #1F8A70; }
-.element-item-quote.User  { background: #004358; background: #004358; }
-.element-item-quote.Family      { background: #BEDB39; background:  #BEDB39; }
+.element-item-box.Other { background: #004358; background:#004358; }
+.element-item-box.Parent       { background: #BEDB39; background: #BEDB39; }
+.element-item-quote.Recovery          { background: #29D9C2; background: #29D9C2; }
+.element-item-quote.User  { background: #B9121B; background: #B9121B; }
+.element-item-quote.Family      { background: #1F8A70; background:  #1F8A70; }
 .element-item-quote.Significant_Other        { background: #FD7400; background: #FD7400; }
 .element-item-quote.Friend      { background: #B266BF; background: #B266BF; }
-.element-item-quote.Other { background: #29D9C2; background:#29D9C2; }
-.element-item-quote.Parent       { background: #B9121B; background: #B9121B; }
+.element-item-quote.Other { background: #004358; background:#004358; }
+.element-item-quote.Parent       { background: #BEDB39; background: #BEDB39; }
 
 
