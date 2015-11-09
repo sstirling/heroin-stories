@@ -1,0 +1,39 @@
+Extras 
+
+<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
+  <button class="button" data-filter=".Recovery">Recovery</button>
+  <button class="button" data-filter=".User">User</button>
+  <button class="button" data-filter=".Family">Family</button>
+  <button class="button" data-filter=".Parent">Parent</button>
+  <button class="button" data-filter=".Friend">Friend</button>
+  <button class="button" data-filter=".Significant_Other">Significant Other</button>
+  <button class="button" data-filter=".Other">Other</button>
+</div>
+
+
+<h2>Sort</h2>
+<div id="sorts" class="button-group sort">  <button class="button is-checked" data-sort-by="original-order">original order</button>
+  <button class="button" data-sort-by="name">Name</button>
+  <button class="button" data-sort-by="age">Age</button>
+  <button class="button" data-sort-by="gender">Sex</button>
+  <button class="button" data-sort-by="town">Town</button>
+
+
+</div>
+
+JS
+
+
+  // filter functions
+  var filterFns = {
+    // show if number is greater than 50
+    numberGreaterThan50: function() {
+      var age = $(this).find('.age').text();
+      return parseInt( age, 10 ) > 50;
+    },
+    // show if name ends with -ium
+    ium: function() {
+      var name = $(this).find('.county').text();
+      return name.match( /Essex$/ );
+    }
+  };

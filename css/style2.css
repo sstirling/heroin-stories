@@ -52,27 +52,25 @@ pre {
 
 .button {
   display: inline-block;
-  padding: 0.5em 1.0em;
-  background: #EEE;
+  padding: 0.5em 1.0em 0.5em 1.0em;
+  margin: 5px;
+  background: #B0B0B0;
   border: none;
-  border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
-  color: #222;
+  border-radius: 50px;
+  color: #fff;
   font-family: sans-serif;
   font-size: 16px;
-  text-shadow: 0 1px white;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
+  background-color: #7D6BD4;
+  color: #fff;
 }
 
 .button:active,
 .button.is-checked {
-  background-color: #28F;
+  background-color: #7D6BD4;
 }
 
 .button.is-checked {
@@ -81,31 +79,56 @@ pre {
 }
 
 .button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+  box-shadow: inset 0 1px 10px #7D6BD4;
 }
 
 /* ---- button-group ---- */
 
-.button-group:after {
+
+
+.button-group {
   content: '';
   display: block;
+  top: 50px;
+  left: 10px;
+  z-index: 999;
+  clear: both;
+  position: absolute;
+}
+
+.button-group .filter{
+  position:absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 999;
+  clear:both;
+
+}
+
+.button-group .sort {
+  position:absolute;
+  top: 150px;
+  left: 10px;
+  z-index: 900;
   clear: both;
 }
 
 .button-group .button {
   float: left;
-  border-radius: 0;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
   margin-left: 0;
   margin-right: 1px;
 }
 
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+.button-group .button:first-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
+.button-group .button:last-child { border-radius: 0.5em 0.5em 0.5em 0.5em; }
 
 /* ---- isotope ---- */
 
 .isotope {
   border: 0px solid #333;
+  position:absolute;
+  top:150px;
 }
 
 /* clear fix */
@@ -113,8 +136,16 @@ pre {
   content: '';
   display: block;
   clear: both;
+  position:fixed;
+  top:150px;
 }
 
+/* Button Containers */
+
+.button-container {
+ position: absolute;
+  top: 5px;
+}
 /* ---- .element-item ---- */
 
 .element-item {
@@ -145,6 +176,12 @@ pre {
 
 }
 
+.element-item-media {
+  width: 330px;
+  height: 230px;
+  overflow: hidden;
+
+}
 
 .element-item > * {
   margin: 0;
@@ -215,7 +252,7 @@ pre {
 
 .element-item-quote .quote {
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 10px;
   font-size: 16px;
   color: #ffffff;
@@ -257,6 +294,15 @@ pre {
   transition: padding 0.2s ease-in-out
 }
 
+.element-item-media .expand {
+  height: 50px;
+  overflow: hidden;
+  -webkit-transition: padding 0.2s ease-in-out;
+  -moz-transition: padding 0.2s ease-in-out;
+  -o-transition: padding 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out
+}
+
 .element-item-box:hover {
   background: #8CF;
   cursor: pointer;
@@ -281,6 +327,15 @@ pre {
   overflow:scroll;
 }
 
+.element-item-media.gigante {
+  width: 300px;
+  height: 500px;
+  background: #fff;
+  overflow:scroll;
+}
+
+
+
 
 
 .element-item-box.Recovery          { background: #29D9C2; background: #29D9C2; }
@@ -297,5 +352,33 @@ pre {
 .element-item-quote.Friend      { background: #B266BF; background: #B266BF; }
 .element-item-quote.Other { background: #004358; background:#004358; }
 .element-item-quote.Parent       { background: #BEDB39; background: #BEDB39; }
+.element-item-media.Recovery          { background: #29D9C2; background: #29D9C2; }
+.element-item-media.User  { background: #B9121B; background: transparent; }
+.element-item-media.Family      { background: #1F8A70; background:  #B9121B; }
+.element-item-media.Significant_Other        { background: #FD7400; background: #FD7400; }
+.element-item-media.Friend      { background: #B266BF; background: #B266BF; }
+.element-item-media.Other { background: #004358; background:#004358; }
+.element-item-media.Parent       { background: #BEDB39; background: #BEDB39; }
 
+.element-item.Atlantic
+.element-item.Bergen
+.element-item.Burlington
+.element-item.Camden
+.element-item.Cape_May
+.element-item.Cumberland
+.element-item.Essex
+.element-item.Gloucester
+.element-item.Hudson
+.element-item.Hunterdon
+.element-item.Mercer
+.element-item.Monmouth
+.element-item.Morris
+.element-item.Middlesex
+.element-item.Ocean
+.element-item.Passaic
+.element-item.Salem
+.element-item.Somerset
+.element-item.Sussex
+.element-item.Union
+.element-item.Warren
 

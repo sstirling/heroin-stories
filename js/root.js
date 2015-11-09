@@ -14,7 +14,7 @@ $( document ).ready( function() {
       
     }
   });
-
+  
 
   $container.on( 'click', '.element-item-quote', function() {
     // change size of item by toggling gigante class
@@ -28,7 +28,6 @@ $( document ).ready( function() {
     $container.isotope('layout');
   });
 
-
   // filter functions
   var filterFns = {
     // show if number is greater than 50
@@ -38,10 +37,11 @@ $( document ).ready( function() {
     },
     // show if name ends with -ium
     ium: function() {
-      var name = $(this).find('.name').text();
-      return name.match( /ium$/ );
+      var name = $(this).find('.county').text();
+      return name.match( /Essex$/ );
     }
   };
+
 
   // bind filter button click
   $('#filters').on( 'click', 'button', function() {
@@ -65,5 +65,6 @@ $( document ).ready( function() {
       $( this ).addClass('is-checked');
     });
   });
+
   
 });
