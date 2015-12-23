@@ -26,7 +26,7 @@ body {
 
 .button:hover {
   background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  text-shadow: 0 1px hsla(0, 14%, 52%, 52);
   color: #222;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+  box-shadow: inset 0 1px 10px hsla(25, 0%, 0%, 0.8);
 }
 
 /* ---- button-group ---- */

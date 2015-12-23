@@ -1,8 +1,10 @@
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+ 
 
 body {
 }
@@ -59,7 +61,7 @@ pre {
   border-radius: 50px;
   color: #fff;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -135,7 +137,7 @@ pre {
   border: 0px solid #333;
   display:block;
   position:relative;
-  top: 170px;
+  top:250px;
 }
 
 /* clear fix */
@@ -160,12 +162,19 @@ pre {
   position: relative;
   float: left;
   width: 100px;
-  height: 120px;
+  height: 115px;
   margin: 5px;
   padding: 10px;
   background: #888;
   color: #262524;
   display:inline-block;
+  overflow: hidden;
+
+}
+
+.element-item-box {
+  width: 80px;
+  height: 120px;
   overflow: hidden;
 
 }
@@ -184,12 +193,6 @@ pre {
 
 }
 
-.element-item-media {
-  width: 330px;
-  height: 230px;
-  overflow: hidden;
-
-}
 
 .element-item > * {
   margin: 0;
@@ -200,7 +203,7 @@ pre {
   position: absolute;
 
   left: 10px;
-  top: 60px;
+  top: 70px;
   text-transform: none;
   letter-spacing: 0;
   font-size: 12px;
@@ -213,10 +216,10 @@ pre {
   position: absolute;
 
   left: 10px;
-  top: 170px;
+  top: 180px;
   text-transform: none;
   letter-spacing: 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   color: #ffffff;
 
@@ -225,9 +228,9 @@ pre {
 
 .element-item .symbol {
   position: absolute;
-  left: 10px;
+  left: 8px;
   top: 0px;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -243,8 +246,8 @@ pre {
 .element-item .town {
   position: absolute;
   left: 10px;
-  top: 76px;
-  font-size: 13px;
+  top: 86px;
+  font-size: 11px;
   color: #ffffff;
 
 }
@@ -252,8 +255,8 @@ pre {
 .element-item-quote .town {
   position: absolute;
   left: 10px;
-  top: 190px;
-  font-size: 13px;
+  top: 195px;
+  font-size: 11px;
   color: #ffffff;
 
 }
@@ -262,7 +265,7 @@ pre {
   position: absolute;
   top: 60px;
   left: 10px;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
 }
 
@@ -283,6 +286,7 @@ pre {
   color: #ffffff;
 
 }
+
 
 .element-item-box .expand {
   height: 50px;
@@ -329,7 +333,7 @@ pre {
 }
 
 .element-item-quote.gigante {
-  width: 300px;
+  width: 260px;
   height: 500px;
   background: #fff;
   overflow:scroll;
@@ -348,7 +352,7 @@ pre {
 .element-item-box.User  { background: #7A266A; background: #7A266A; }
 .element-item-box.Family      { background: #7477AD; background:  #7477AD; }
 .element-item-box.Significant_Other        { background: #FF8C61; background: #FF8C61; }
-.element-item-box.Friend      { background: #AA6735; background: #AA6735; }
+.element-item-box.Friend      { background: a; background: #AA6735; }
 .element-item-box.Other { background: #804112; background:#804112; }
 .element-item-box.Parent       { background: #313476; background: #313476; }
 .element-item-quote.Recovery          { background: #B36EA6; background: #B36EA6; }
@@ -387,8 +391,3 @@ pre {
 .element-item.Sussex
 .element-item.Union
 .element-item.Warren
-
-
-
-
-

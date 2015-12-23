@@ -14,7 +14,7 @@ $( document ).ready( function() {
       
     }
   });
-  
+
 
   $container.on( 'click', '.element-item-quote', function() {
     // change size of item by toggling gigante class
